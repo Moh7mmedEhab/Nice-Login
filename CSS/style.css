@@ -1,1 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+  font-family: "Poppins", "sans-serif";
+  box-sizing: content-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 850px;
+  height: 550px;
+  border-radius: 30px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.wrapper .left-section {
+  width: 50%;
+  height: 100%;
+  background-color: #7494ec;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  color: #fff;
+}
+
+.wrapper .left-section h1 {
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+
+.wrapper .left-section p {
+  font-size: 14px;
+  letter-spacing: 0.8px;
+}
+
+.wrapper .left-section a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 40px;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  margin: 10px;
+  border: 2px solid;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.wrapper .right-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.wrapper .right-section h1 {
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+
+.wrapper form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0 20px;
+}
+
+.wrapper form .input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 340px;
+  height: 50px;
+  box-sizing: content-box;
+}
+
+.wrapper form .input-wrapper input {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+.wrapper form .input-wrapper input::placeholder {
+  font-size: 16px;
+}
+
+.wrapper form .input-wrapper i {
+  position: absolute;
+  right: 0;
+  translate: -20px;
+}
+
+.wrapper form .forgot {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+}
+
+.wrapper form button[type="submit"] {
+  width: 340px;
+  height: 50px;
+  background-color: #7494ec;
+  color: #fff;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.wrapper .right-links p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.wrapper .links {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 10px;
+}
+
+.wrapper .links .link {
+  width: 50px;
+  aspect-ratio: 1/1;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: black;
+  text-decoration: none;
+ }
+  
+  @media (max-width: 992px) {
+    .wrapper {
+      flex-direction: column;
+      width: 500px;
+      height: 620px;
+    }
+    
+    .wrapper .left-section {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      border-radius: 0 0 100px 100px;
+    }
+  }
+
+@media (max-width: 576px) {
+  .wrapper {
+    width: 400px;
+  }
+}
+
+@media (max-height: 620px) {
+  body {
+    padding: 20px 0;
+  }
+}
