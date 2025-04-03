@@ -136,6 +136,12 @@ body {
   border: none;
   font-weight: 600;
   font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.wrapper form button[type="submit"]:hover {
+  background-color: #567be1;
 }
 
 .wrapper .right-links p {
